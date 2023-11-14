@@ -1,0 +1,348 @@
+<!DOCTYPE >
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Vistara</title>
+        <style type="text/css">
+            body {
+                margin: 0;
+                padding: 0;
+                text-indent: 0;
+                width: 100%;
+            }
+
+            .Table1{
+                color: black;
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 10pt;
+                width: 100%;
+                text-align: center;
+            }
+            .Table1 td{
+                margin-bottom: 20px; 
+                padding-top:10px;
+
+            }
+            .Table2 td{
+                font-size: 9pt;
+                max-width: 100px; /* Set the maximum width of each cell */
+                word-wrap: break-word;
+            }
+            .Table2{
+                margin-bottom: 20px; 
+            }
+            
+            .Table3{
+                font-family: Arial, sans-serif;
+                font-style: normal;
+                text-decoration: none;
+            }
+            
+            .Table3 td{
+                font-size: 9pt;
+            }
+            .Table3 {
+                margin-bottom: 20px;
+                border-collapse: collapse;
+                border: 1px solid black;
+            }
+            .table3 tr {
+            border: 1px solid black; /* Border inside the table for rows */
+            }
+
+            .table3 td {
+            padding: 2px;
+            text-align: left;
+            border: 1px solid black; /* Border inside the table for cells */
+            }
+            .table4{
+                margin-bottom: 20px;
+            }
+            .Table5 td{
+                font-size: 8pt;
+                font-family: "Times New Roman", serif;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <table class="logoicon" style="width: 100%;">
+                <tr >
+                    <td style="text-align: center; padding-top: 50px;">
+                        <img width="100" height="84" style="text-align: center;" src="data:image/jpg;base64,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"/>
+                    </td>
+                </tr>
+            </table>
+            <table class="Table1">
+                <tr>
+                    <td>
+                        TATA SIA Airlines Limited
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Jeevan Bharti Tower 1, 10th floor Connaught Circus 110001 New Delhi
+                    <td>
+                </tr>
+                <tr>
+                    <td>
+                        GSTIN :07AAECT8346F1Z6
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Credit Note Supplementary Invoice 
+                    </td>
+                </tr>   
+            </table>
+            <table class="Table2" style="width:100%;">
+                <tr>
+                    <td style="width: 20%;" >
+                        <b>Bill to</b>
+                    </td>
+                    <td  style="width: 40%;">
+    
+                    </td>
+                    <td style="width: 25%;">
+                        <b>Credit Note No.</b>
+                    </td>
+                    <td style="width: 25%;">
+                        C070000001246845
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;" >
+                        <b>Name</b>
+                    </td>
+                    <td style="width: 40%;">
+                        BALMER LAWRIE AND CO LTD
+                    </td>
+                    <td style="width: 25%;" >
+                        <b>Credit Note Date</b>
+                    </td>
+                    <td style="width: 25%;">
+                        17-SEP-22
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;"  >
+                        <b>Address</b>
+                    </td>
+                    <td style="width: 40%;" >
+                        CORE08GF/SCOPECOMPLEX/NEWDELHI/DELHI/110003
+                    </td>
+                    <td style="width: 25%;">
+                        <b>Ref Invoice No.</b>
+                    </td>
+                    <td style="width: 25%;" >
+                        I070000011931281
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;"  >
+                        <b>State/Union Territory</b>
+                    </td>
+                    <td  style="width: 40%;">
+                        DELHI
+                    </td>
+                    <td style="width: 25%;">
+                        <b>Ref Invoice Date.</b>
+                    </td>
+                    <td style="width: 25%;">
+                        31-AUG-22
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;" >
+                        <b>State/Union Territory</b>
+                    </td>
+                    <td  style="width: 40%;">
+                        07
+                    </td>
+                    <td style="width: 25%;">
+                        
+                    </td>
+                    <td style="width: 25%;">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;" >
+                        <b>GSTN</b>
+                    </td>
+                    <td style="width: 40%;">
+                        07AABCB0984E1ZX
+                    </td>
+                    <td style="width: 25%;">
+                        
+                    </td>
+                    <td style="width: 25%;">
+                        
+                    </td>
+                </tr>
+            </table>
+            <table class="table3" style="width: 100%;">
+                <tr>
+                    <td style="width: 50%;">
+                        Description of Service
+                    </td>
+                    <td style="text-align: right;">
+                        Transport of Passenger by air
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">
+                        SAC Code
+                    </td>
+                    <td style="text-align: right;">
+                        996425
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;"> Passenger Name</td>
+                    <td style="text-align: right;"> DAS SUBHAS CHANDRA LAL MR</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;"> Ticket number</td>
+                    <td style="text-align: right;">2283909981359</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Natureof Service</td>
+                    <td style="text-align: right;"> </td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Total Journey</td>
+                    <td style="text-align: right;"> DEL-LHR-DEL</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Journey covered under present Invoice </td>
+                    <td style="text-align: right;"> DEL-LHR</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Place of supply (State)</td>
+                    <td style="text-align: right;">DELHI</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Place of Embarkation</td>
+                    <td style="text-align: right;">DEL</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Place of Disembarkation</td>
+                    <td style="text-align: right;">LHR</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Value of services</td>
+                    <td style="text-align: right;">249,030</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Airline tax amount</td>
+                    <td style="text-align: right;">260</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Airport tax amount </td>
+                    <td style="text-align: right;">24,067</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Total taxable value</td>
+                    <td style="text-align: right;">249,290</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Discount</td>
+                    <td style="text-align: right;">0.0%</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Net taxable value</td>
+                    <td style="text-align: right;">249,290</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">CGST Rate</td>
+                    <td style="text-align: right;"> 6.0%</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">CGST Amount</td>
+                    <td style="text-align: right;">14,958</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">SGST Rate</td>
+                    <td style="text-align: right;">6.0%</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">SGST Amount</td>
+                    <td style="text-align: right;">14,958</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">IGST Rate</td>
+                    <td style="text-align: right;">0.0%</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">IGST Amount</td>
+                    <td style="text-align: right;">0</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Kerala Food CESS</td>
+                    <td style="text-align: right;">0</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Total Invoice Value (in figures)</td>
+                    <td style="text-align: right;">303,272</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Total Invoice Value (in words)</td>
+                    <td style="text-align: right;">Three lakh Three Thousand Two Hundred And Seventy Two</td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;">Whether reverse charge applicable (Y/N)</td>
+                    <td style="text-align: right;">N</td>
+                </tr>
+            </table>
+            <table class="table4">
+                <tr>
+                    <td style="font-size: 9pt;">
+                    I/We  hereby declare that though our aggregate turnover in nay preceding financial year from 2017-18 onwards
+                     is more than the aggregate turnover notified under sub-rule (4) of rule 48 , we are not required to prepare an invoice in terms of the provisions of the said sub-rule
+                    </td>
+                </tr>
+
+            </table>
+            <table class="table5" style="width: 100%;">
+                <tr>
+                    <td style="width:50% ;">
+
+                    </td>
+                    <td style="width:15% ;">
+                        Signature
+                    </td>
+                    <td style="width:35% ;">
+                        <img width="82" height="40" src="data:image/jpg;base64,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"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50% ;">
+
+                    </td>
+                    <td style="width:15% ;">
+                        Name of
+                    </td style="width:35% ;">
+                    <td>
+                        John Rocha
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50% ;">
+
+                    </td>
+                    <td style="width:15% ;">
+                        Designation
+                    </td>
+                    <td style="width:35% ;">
+                        Head of Revenue Accounting
+                    </td>
+                </tr>
+            </table>
+        </div>
+     </body>
+</html>
